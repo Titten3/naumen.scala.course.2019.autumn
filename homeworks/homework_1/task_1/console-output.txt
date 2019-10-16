@@ -1,0 +1,26 @@
+scala> val a = "Hello world!"
+a: String = Hello world!
+
+scala> print(a)
+Hello world!
+
+scala> val str = (msg:String, name:String) => s"$msg scala! $name"
+str: (String, String) => String = $$Lambda$1065/1871079355@20b829d5
+
+scala> print(str("Hello","Pavel Zaryvnykh"))
+Hello scala! Pavel Zaryvnykh
+
+scala> val myName = "Pavel Zaryvnykh"
+myName: String = Pavel Zaryvnykh
+
+scala> print(str("Hello", myName))
+Hello scala! Pavel Zaryvnykh
+
+scala> print(str("Hola", myName))
+Hola scala! Pavel Zaryvnykh
+
+scala> print(str("Hola", myName.reverse))
+Hola scala! hkynvyraZ levaP
+
+scala> print(str("Hello", myName.reverse))
+Hello scala! hkynvyraZ levaP
